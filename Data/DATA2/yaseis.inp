@@ -1,0 +1,74 @@
+prem.md                      # Earth model (modelfile)
+2009 8 28 01:51:20.40        # Origin time year mon day hour:min:sec
+0.0 0.0  20                  # Source Lat Lon depth (km)
+1.0e+19                      # Moment tensor scale (Nm)
+1.0 1.0 1.0                  # Moment tensor Mrr Mtt Mpp (Up,South,East)
+0.0 0.0 0.0                  # Moment tensor Mrt Mrp Mtp 
+4096                         # Number of samples (npts)
+0.5                          # Sampling interval (sec)
+2051                         # Number of frequencies to be computed (nf)
+0.001 0.005 0.75 0.8         # Frequency taper f0 f1 f2 f3 (Hz)
+15001                        # Maximum angular number (nl)
+0.01                         # Suppressing factor (expsigT)
+0                            # Starting time of seismogram (t0)
+60              # Number of stations (nsta)
+ 3.1  44.3   STA01       # Station Lat Lon Name
+-4.6  47.7   STA02       # Station Lat Lon Name
+-1.4  57.0   STA03       # Station Lat Lon Name
+-2.3  45.2   STA04       # Station Lat Lon Name
+ 1.0  53.1   STA05       # Station Lat Lon Name
+-3.4  54.0   STA06       # Station Lat Lon Name
+ 1.7  52.6   STA07       # Station Lat Lon Name
+ 0.9  48.5   STA08       # Station Lat Lon Name
+ 4.2  45.0   STA09       # Station Lat Lon Name
+ 3.4  49.7   STA10       # Station Lat Lon Name
+-4.1  52.1   STA11       # Station Lat Lon Name
+ 1.5  48.7   STA12       # Station Lat Lon Name
+ 5.2  52.3   STA13       # Station Lat Lon Name
+-1.9  50.4   STA14       # Station Lat Lon Name
+ 1.6  52.4   STA15       # Station Lat Lon Name
+-5.4  52.7   STA16       # Station Lat Lon Name
+-1.0  50.7   STA17       # Station Lat Lon Name
+-0.3  46.1   STA18       # Station Lat Lon Name
+-1.1  50.4   STA19       # Station Lat Lon Name
+-0.8  44.2   STA20       # Station Lat Lon Name
+ 2.8  45.3   STA21       # Station Lat Lon Name
+-0.6  49.2   STA22       # Station Lat Lon Name
+ 1.1  50.0   STA23       # Station Lat Lon Name
+-3.8  50.3   STA24       # Station Lat Lon Name
+-3.8  49.0   STA25       # Station Lat Lon Name
+-0.7  52.4   STA26       # Station Lat Lon Name
+ 1.3  47.9   STA27       # Station Lat Lon Name
+-5.0  49.6   STA28       # Station Lat Lon Name
+ 1.1  44.7   STA29       # Station Lat Lon Name
+ 2.2  47.0   STA30       # Station Lat Lon Name
+-6.3  50.5   STA31       # Station Lat Lon Name
+-4.0  53.5   STA32       # Station Lat Lon Name
+-3.5  41.0   STA33       # Station Lat Lon Name
+-1.5  52.9   STA34       # Station Lat Lon Name
+ 2.9  49.8   STA35       # Station Lat Lon Name
+ 2.0  46.4   STA36       # Station Lat Lon Name
+-0.5  50.8   STA37       # Station Lat Lon Name
+-2.9  53.9   STA38       # Station Lat Lon Name
+ 2.9  46.6   STA39       # Station Lat Lon Name
+ 0.3  50.8   STA40       # Station Lat Lon Name
+-3.9  51.7   STA41       # Station Lat Lon Name
+-0.9  48.5   STA42       # Station Lat Lon Name
+-0.0  53.8   STA43       # Station Lat Lon Name
+ 1.2  52.0   STA44       # Station Lat Lon Name
+ 2.0  49.4   STA45       # Station Lat Lon Name
+ 0.2  49.0   STA46       # Station Lat Lon Name
+ 0.6  50.3   STA47       # Station Lat Lon Name
+ 0.8  48.7   STA48       # Station Lat Lon Name
+-0.0  46.6   STA49       # Station Lat Lon Name
+-3.0  47.9   STA50       # Station Lat Lon Name
+-1.2  53.2   STA51       # Station Lat Lon Name
+ 1.9  46.6   STA52       # Station Lat Lon Name
+ 3.4  52.8   STA53       # Station Lat Lon Name
+-0.6  49.8   STA54       # Station Lat Lon Name
+ 0.3  47.8   STA55       # Station Lat Lon Name
+-3.5  52.6   STA56       # Station Lat Lon Name
+-3.2  51.3   STA57       # Station Lat Lon Name
+ 3.8  46.6   STA58       # Station Lat Lon Name
+ 0.2  48.0   STA59       # Station Lat Lon Name
+-3.9  52.7   STA60       # Station Lat Lon Name
