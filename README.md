@@ -31,27 +31,31 @@
 
 ## Example
 ### Input file
-    The contents of input file are described by the following lines.
-`
-listfile1    #File of SAC list names;    
-200.         #Lower limit of time in second;    
-400.         #Upper limit of time in second;    
-0.25         #Lower limit of frequency of plane wave;    
-0.26         #Upper limit of frequency of plane wave;    
-0.01         #Lower limit of slowness in s/km;    
-0.15         #Upper limit of slowness in s/km;    
-0.           #Lower limit of back-azimuth in degree;    
-360.         #Upper limit of back-azimuth in degree;    
-81           #Segments of slowness;    
-181          #Segments of bazk-azimuth;    
-lonlat       #Coordinate system: "lonlat", "km" or "meter";    
-out.txt      #File of results.    
-`
+The contents of input file are described by the following lines.
+
+`listfile1    #File of SAC list names;`    
+`200.         #Lower limit of time in second;`    
+`400.         #Upper limit of time in second;`    
+`0.25         #Lower limit of frequency of plane wave;`    
+`0.26         #Upper limit of frequency of plane wave;`    
+`0.01         #Lower limit of slowness in s/km;`    
+`0.15         #Upper limit of slowness in s/km;`    
+`0.           #Lower limit of back-azimuth in degree;`    
+`360.         #Upper limit of back-azimuth in degree;`    
+`81           #Segments of slowness;`    
+`181          #Segments of bazk-azimuth;`    
+`lonlat       #Coordinate system: "lonlat", "km" or "meter";`    
+`out.txt      #File of results.`
+
 ### Steps
-    list SAC format file in a file, here `listfile1`;
-    set parameters in input file, here `input.para1`;
-    run an example with `../bin/cross_spec_beam input.para1`;
-    plot the spectra with `python plot_spectra.py input.para1 deg`.
+list SAC format file in a file, here 
+`listfile1`;
+set parameters in input file, here 
+`input.para1`;
+run an example with 
+`../bin/cross_spec_beam input.para1`;
+plot the spectra with 
+`python plot_spectra.py input.para1 deg`.
 
 ## Installztion
     Go into folder `src` and run `make` to compile and executable
