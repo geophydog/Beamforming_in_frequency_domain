@@ -48,7 +48,7 @@ The contents of input file are described by the following lines.
 `out.txt      #File of results.`
 
 ### Steps
-list SAC format file in a file, here 
+list SAC format files in a file, here 
 `listfile1`;
 set parameters in input file, here 
 `input.para1`;
@@ -57,7 +57,7 @@ run an example with
 plot the spectra with 
 `python plot_spectra.py input.para1 deg`.
 
-## Installztion
+## Installation
     Go into folder `src` and run `make` to compile and executable
     command `cross_spec_beam` will be generated in folder `bin`.
 
