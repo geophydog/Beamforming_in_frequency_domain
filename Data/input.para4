@@ -1,8 +1,8 @@
 listfile4    #File of SAC list names;
 100.         #Lower limit of time in second;
 500.         #Upper limit of time in second;
-0.05         #Lower limit of frequency of plane wave;
-0.08         #Upper limit of frequency of plane wave;
+0.10         #Lower limit of frequency of plane wave;
+0.12         #Upper limit of frequency of plane wave;
 0.20         #Lower limit of slowness in s/km;
 1.00         #Upper limit of slowness in s/km;
 0.           #Lower limit of back-azimuth in degree;

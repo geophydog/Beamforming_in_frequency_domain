@@ -1,0 +1,13 @@
+listfile6    #File of SAC list names;
+2000.        #Lower limit of time in second;
+2100.        #Upper limit of time in second;
+0.20         #Lower limit of frequency of plane wave;
+0.30         #Upper limit of frequency of plane wave;
+0.0          #Lower limit of slowness in s/km;
+0.5          #Upper limit of slowness in s/km;
+0.           #Lower limit of back-azimuth in degree;
+360.         #Upper limit of back-azimuth in degree;
+61           #Segments of slowness;
+121          #Segments of bazk-azimuth;
+lonlat       #Coordinate system: "lonlat", "km" or "meter";
+out.txt      #File of results.

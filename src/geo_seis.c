@@ -410,7 +410,7 @@ void array_spectra( ARRAYPARA p, fftw_complex **sp, char *system) {
     float **rpos;
     fftw_complex *ccfd;
 
-    nccf = p.nsac * (p.nsac-1) / 2;
+    nccf = p.nsac * p.nsac;
     ccfd = (fftw_complex *) fftw_malloc( sizeof(fftw_complex) * nccf );
     rpos = (float **) malloc( sizeof(float *) * nccf );
     for(i = 0; i < nccf; i ++)
@@ -421,8 +421,8 @@ void array_spectra( ARRAYPARA p, fftw_complex **sp, char *system) {
         const float g = 111.19492664455;
         float dist, az, res[3];
         k = 0;
-        for(i = 0; i < p.nsac-1; i ++)
-            for(j = i+1; j < p.nsac; j ++){
+        for(i = 0; i < p.nsac; i ++)
+            for(j = 0; j < p.nsac; j ++){
                 cal_dist_az_baz(p.pos[i][1], p.pos[i][0], \
                                 p.pos[j][1], p.pos[j][0], \
                                 res);
@@ -434,16 +434,16 @@ void array_spectra( ARRAYPARA p, fftw_complex **sp, char *system) {
             }
     } else if( !(strcmp("km", system))) {
         k = 0;
-        for(i = 0; i < p.nsac-1; i ++)
-            for(j = i+1; j < p.nsac; j ++){
+        for(i = 0; i < p.nsac; i ++)
+            for(j = 0; j < p.nsac; j ++){
                 rpos[k][0] = p.pos[j][0] - p.pos[i][0];
                 rpos[k][1] = p.pos[j][1] - p.pos[i][1];
                 k ++;
             }
     } else {
         k = 0;
-        for(i = 0; i < p.nsac-1; i ++)
-            for(j = i+1; j < p.nsac; j ++) {
+        for(i = 0; i < p.nsac; i ++)
+            for(j = 0; j < p.nsac; j ++) {
                 rpos[k][0] = (p.pos[j][0] - p.pos[i][0]) / 1e3;
                 rpos[k][1] = (p.pos[j][1] - p.pos[i][1]) / 1e3;
                 k ++;
@@ -468,8 +468,8 @@ void array_spectra( ARRAYPARA p, fftw_complex **sp, char *system) {
         db   = (p.b2 - p.b1) / (p.nb - 1);
     // Compute cross-spectra.
         k = 0;
-        for(i = 0; i < p.nsac-1; i ++)
-            for(j = i+1; j < p.nsac; j ++){
+        for(i = 0; i < p.nsac; i ++)
+            for(j = 0; j < p.nsac; j ++){
                 ccfd[k][0] = p.fft[m][i][0] * p.fft[m][j][0] \
                            + p.fft[m][i][1] * p.fft[m][j][1]; 
                 ccfd[k][1] = p.fft[m][j][0] * p.fft[m][i][1] \

@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy import interpolate
 import sys
+import matplotlib as mpl
 
 argc = len(sys.argv)
 if argc != 3:
@@ -31,17 +32,22 @@ b = np.linspace(data[4], data[5], len(PP[0])) / 180 * np.pi
 baz  = np.linspace(b[0], b[-1], 361)
 slow = np.linspace(s[0], s[-1], 201)
 inp  = interpolate.interp2d(b, s, PP, kind='cubic')
-PP   = inp(baz, slow)
+PP   = abs(inp(baz, slow))
 PP /= PP.max()
+PP = 10 * np.log10(PP)
+col = []
+with open('cmap.txt', 'r') as fin:
+    for line in fin.readlines():
+        col.append(line.strip())
+cmap = mpl.colors.LinearSegmentedColormap.from_list('cmap', col, 101)
 
 plt.figure(figsize=(7, 6))
 ax1 = plt.subplot(111, projection='polar')
-#plt.pcolormesh(baz, slow, PP, cmap='CMRmap_r')
-plt.pcolormesh(baz, slow, PP, cmap='CMRmap_r')
+plt.pcolormesh(baz, slow, PP, cmap=cmap, vmin=-10, vmax=0)
 cbar = plt.colorbar(shrink=0.4, pad=0.2)
-cbar.set_label(r'Normalized $\theta-S$ Spectra', fontsize=14)
+cbar.set_label(r'Beam power (dB)', fontsize=14)
 cbar.ax.tick_params(labelsize=15)
-ax1.grid(color='gray', ls='--', lw=2)
+ax1.grid(color='gray', ls=(10, (5, 8)), lw=1)
 ax1.tick_params(axis='y', colors='gray', labelsize=15)
 ax1.set_theta_zero_location('N')
 ax1.set_theta_direction(-1)
