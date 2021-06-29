@@ -1,4 +1,7 @@
-## Seismic data
+## F-K cross-spectral beamforming
+    Searching the back-azimuth and corresponding apparent slowness (or ray parameter)    
+    with F-K cross-spectral beamforming array method.
+## Seismic data tested
     Five data sets are prepared in folder `Data`.
 ### 1 DATA1
     Synthetic vertical-component seismograms with YASEIS (Ma, 2013)
@@ -58,10 +61,10 @@ plot the spectra with
 `python plot_spectra.py input.para1 deg`.
 
 ## Installation
-    Go into folder `src` and run `make` to compile and executable
-    command `cross_spec_beam` will be generated in folder `bin`.
+Go into the directory `src` and type `make` to compile and the executable
+command `cross_spec_beam` will be generated in the upper-level directory `bin`.
 
 ## Dependencies
-    `gcc` or `icc` compiler;
-    `fftw3` for doing FFT;
-    `python3` for visualization.
+`gcc` or `icc` compiler;
+`fftw3` for doing FFT;
+`python3` for visualization.
