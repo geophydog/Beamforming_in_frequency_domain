@@ -2,7 +2,7 @@
     Searching the back-azimuth and corresponding apparent slowness (or ray parameter)    
     with F-K cross-spectral beamforming array method.
 ## Seismic data tested
-    Five data sets are prepared in folder `Data`.
+    Several data sets are prepared in folder "Data".
 ### 1 DATA1
     Synthetic vertical-component seismograms with YASEIS (Ma, 2013)
         based on the PREM.
@@ -30,6 +30,10 @@
     Real vertical-component seismograms of NO network from NORSAR data
         center in Norway.
     The circle-shaped array is named ARCES and composed of 25 stations.
+    
+### 6 DATA_EVENT
+    Earthquake event data: 2017-06-22T12:31:04|13.7527|-90.9488|46.82|at,pt,us|NEIC PDE|us|pt17173000,at00ory83s,us20009p1a|mww|6.8|us|NEAR COAST OF GUATEMALA
+    
 
 
 ## Example
@@ -59,6 +63,17 @@ run an example with
 `../bin/cross_spec_beam input.para1`;
 plot the spectra with 
 `python plot_spectra.py input.para1 deg`.
+
+
+### P or pP phase example
+#### waveforms
+![wave](https://github.com/geophydog/Beamforming_in_frequency_domain/blob/main/Data/images/wave.png)
+
+#### beamfoming power
+`../bin/cross_spec_beam input.para9`
+`python plot_spectra.py input.para9 deg`
+![beam](https://github.com/geophydog/Beamforming_in_frequency_domain/blob/main/Data/images/630-700.png)
+
 
 ## Installation
 Go into the directory `src` and type `make` to compile and the executable
