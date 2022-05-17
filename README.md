@@ -1,6 +1,17 @@
 ## F-K cross-spectral beamforming
     Searching the back-azimuth and corresponding apparent slowness (or ray parameter)    
     with F-K cross-spectral beamforming array method.
+    
+## Installation
+Go into the directory `src` and type `make` to compile and the executable
+command `cross_spec_beam` will be generated in the upper-level directory `bin`.
+
+## Dependencies
+`gcc` or `icc` compiler;
+`fftw3` for doing FFT;
+`python3` for visualization.
+
+
 ## Seismic data tested
     Several data sets are prepared in folder "Data".
 ### 1 DATA1
@@ -66,7 +77,7 @@ plot the spectra with
 
 
 ***
-## Back-azimuth and ray parameter of P or pP phase
+## An example: back-azimuth and ray parameter of P or pP phase
 `2017-06-22T12:31:04|13.7527|-90.9488|46.82|at,pt,us|NEIC PDE|us|pt17173000,at00ory83s,us20009p1a|mww|6.8|us|NEAR COAST OF GUATEMALA`     
 
 #### waveforms
@@ -78,11 +89,5 @@ plot the spectra with
 ![beam](https://github.com/geophydog/Beamforming_in_frequency_domain/blob/main/Data/images/630-700.png)
 
 
-## Installation
-Go into the directory `src` and type `make` to compile and the executable
-command `cross_spec_beam` will be generated in the upper-level directory `bin`.
-
-## Dependencies
-`gcc` or `icc` compiler;
-`fftw3` for doing FFT;
-`python3` for visualization.
+## Feedback
+`geophydogvon@gmail.com`
