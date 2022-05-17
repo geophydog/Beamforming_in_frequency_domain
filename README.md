@@ -61,7 +61,6 @@ set parameters in input file, here
 `input.para1`;
 run an example with    
 `../bin/cross_spec_beam input.para1`    
-
 plot the spectra with      
 `python plot_spectra.py input.para1 deg`.
 
@@ -71,8 +70,8 @@ plot the spectra with
 ![wave](https://github.com/geophydog/Beamforming_in_frequency_domain/blob/main/Data/images/wave.png)
 
 #### beamfoming power
-`../bin/cross_spec_beam input.para9`
-`python plot_spectra.py input.para9 deg`
+`../bin/cross_spec_beam input.para9`       
+`python plot_spectra.py input.para9 deg`        
 ![beam](https://github.com/geophydog/Beamforming_in_frequency_domain/blob/main/Data/images/630-700.png)
 
 
