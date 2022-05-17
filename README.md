@@ -59,9 +59,10 @@ list SAC format files in a file, here
 `listfile1`;
 set parameters in input file, here 
 `input.para1`;
-run an example with 
-`../bin/cross_spec_beam input.para1`;
-plot the spectra with 
+run an example with    
+`../bin/cross_spec_beam input.para1`    
+
+plot the spectra with      
 `python plot_spectra.py input.para1 deg`.
 
 
