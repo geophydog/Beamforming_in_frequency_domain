@@ -36,8 +36,8 @@
     
 
 
-## Example
-### Input file
+### Usage tips
+#### input file preparation
 The contents of input file are described by the following lines.
 
 `listfile1    #File of SAC list names;`    
@@ -54,7 +54,7 @@ The contents of input file are described by the following lines.
 `lonlat       #Coordinate system: "lonlat", "km" or "meter";`    
 `out.txt      #File of results.`
 
-### Steps
+#### steps
 list SAC format files in a file, here 
 `listfile1`;
 set parameters in input file, here 
@@ -66,7 +66,7 @@ plot the spectra with
 
 
 ***
-## P or pP phase example
+## Back-azimuth and ray parameter of P or pP phase
 `2017-06-22T12:31:04|13.7527|-90.9488|46.82|at,pt,us|NEIC PDE|us|pt17173000,at00ory83s,us20009p1a|mww|6.8|us|NEAR COAST OF GUATEMALA`     
 
 #### waveforms
