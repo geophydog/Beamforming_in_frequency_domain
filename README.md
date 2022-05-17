@@ -65,7 +65,10 @@ plot the spectra with
 `python plot_spectra.py input.para1 deg`.
 
 
-### P or pP phase example
+***
+## P or pP phase example
+`2017-06-22T12:31:04|13.7527|-90.9488|46.82|at,pt,us|NEIC PDE|us|pt17173000,at00ory83s,us20009p1a|mww|6.8|us|NEAR COAST OF GUATEMALA`     
+
 #### waveforms
 ![wave](https://github.com/geophydog/Beamforming_in_frequency_domain/blob/main/Data/images/wave.png)
 
