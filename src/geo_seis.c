@@ -479,9 +479,9 @@ void array_spectra( ARRAYPARA p, fftw_complex **sp, char *system) {
         for(i = 0; i < p.ns; i ++) {
             slow = p.s1 + i * ds;
             for(j = 0; j < p.nb; j ++){
-                baz = (p.b1+j*db-180.) / 180. * PI;
+                baz = (p.b1+j*db) / 180. * PI;
                 for(k = 0; k < nccf; k ++){
-                    shift = slow * (sin(baz)*rpos[k][0]+cos(baz)*rpos[k][1]);
+                    shift = slow * (-sin(baz)*rpos[k][0]-cos(baz)*rpos[k][1]);
                     tmp2 = tmp1 * shift;
                     sp[i][j][0] += ( ccfd[k][0] * cos(tmp2) - ccfd[k][1] * sin(tmp2) );
                     sp[i][j][1] += ( ccfd[k][1] * cos(tmp2) + ccfd[k][0] * sin(tmp2) );
